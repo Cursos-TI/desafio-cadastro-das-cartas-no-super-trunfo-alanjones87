@@ -25,7 +25,7 @@ int main() {
     printf("Digite a população: ");
     scanf("%d", &populacao1);
     
-    printf("Digite a área  (em km): ");
+    printf("Digite a área  (em km²): ");
     scanf("%f", &area1);
     
     printf("Digite o PIB (em bilhões): ");
@@ -44,7 +44,7 @@ int main() {
     printf("Digite a população: ");
     scanf("%d", &populacao2);
     
-    printf("Digite a área (em km): ");
+    printf("Digite a área (em km²): ");
     scanf("%f", &area2);
     
     printf("Digite o PIB (em bilhões): ");
