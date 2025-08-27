@@ -9,6 +9,8 @@ int main() {
     float area1;
     float pib1;
     int pontos_turisticos1;
+    float densidade_populacional1;
+    float pib_percapita1;
     
     // Variáveis para a segunda carta
     char estado2;
@@ -18,6 +20,8 @@ int main() {
     float area2;
     float pib2;
     int pontos_turisticos2;
+    float densidade_populacional2;
+    float pib_percapita2;
     
     printf("=== SISTEMA SUPER TRUNFO - CADASTRO DE CARTAS ===\n\n");
     
@@ -70,6 +74,13 @@ int main() {
     scanf("%d", &pontos_turisticos2);
     
     printf("\n");
+
+    //Calcular densidade populacional e PIB percapita
+    densidade_populacional1 = populacao1 / area1;
+    pib_percapita1 = pib1 * 1000000000 / populacao1; // Converte PIB de Bilhões para reais antes de dividir 
+    
+    densidade_populacional2 = populacao2 / area2;
+    pib_percapita2 = pib2 * 1000000000 / populacao2; // Converte PIB de Bilhões para reais antes de dividir
     
     // Exibição dos dados cadastrados
     printf("=== CARTAS CADASTRADAS ===\n\n");
@@ -83,6 +94,8 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões\n", pib1);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional1);
+    printf("PIB per Capita: %.2f reais\n", pib_percapita1);
     
     printf("\n");
     
@@ -95,6 +108,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
+    printf("PIB per Capita: %.2f reais\n", pib_percapita2);
     
     return 0;
 }
