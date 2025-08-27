@@ -23,7 +23,7 @@ int main() {
     float densidade_populacional2;
     float pib_percapita2;
     
-    printf("=== SISTEMA SUPER TRUNFO - CADASTRO DE CARTAS ===\n\n");
+    printf("=== SISTEMA SUPER TRUNFO - CADASTRO DE CARTAS ===\n\n\n");
     
     // Cadastro da primeira carta
     printf("--- CADASTRO DA PRIMEIRA CARTA ---\n");
@@ -72,7 +72,7 @@ int main() {
     
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos2);
-    
+      
     printf("\n");
 
     //Calcular densidade populacional e PIB percapita
